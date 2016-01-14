@@ -71,7 +71,7 @@ static CComment *sharedPlugin;
         NSMenuItem *actionMenuItem = [[NSMenuItem alloc] initWithTitle:MENU_ITEM_TITLE action:@selector(doMenuAction) keyEquivalent:@""];
         [actionMenuItem setTarget:self];
         [actionMenuItem setKeyEquivalent:@"/"];
-        [actionMenuItem setKeyEquivalentModifierMask:NSControlKeyMask | NSCommandKeyMask];
+        [actionMenuItem setKeyEquivalentModifierMask:NSAlternateKeyMask | NSCommandKeyMask];
         [[menuItem submenu] addItem:actionMenuItem];
 
         NSMenuItem *optionMenuItem = [[NSMenuItem alloc] initWithTitle:MENU_ITEM_OPTION_TITLE action:@selector(doOptionAction:) keyEquivalent:@""];
